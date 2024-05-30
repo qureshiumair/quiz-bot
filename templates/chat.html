@@ -73,7 +73,7 @@
                 </li>
                 {% else %}
                 <li class="message bot-message">
-                    <div class="message-text">{{message.text}}</div>
+                    <div class="message-text">{{message.text|safe}}</div>
                 </li>
                 {% endif %}
             {% endfor %}
